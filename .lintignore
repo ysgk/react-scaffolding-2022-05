@@ -1,0 +1,10 @@
+node_modules/
+*.md
+
+# Build products
+dist/
+coverage/
+storybook-static/
+
+# codegen
+*.generated.*
