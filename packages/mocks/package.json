@@ -1,0 +1,22 @@
+{
+  "name": "@my/mocks",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "type": "module",
+  "scripts": {
+    "dev": "yarn serve:watch",
+    "serve": "yarn serve:watch",
+    "serve:watch": "NODE_ENV=development PORT=5017 nodemon --watch '../schema/schema.graphql' --watch 'src' --watch 'index.ts' --watch 'package.json' --watch 'tsconfig.json' --exec 'ts-node-esm' index.ts -e ts,graphql",
+    "start": "ts-node-esm index.ts -e ts,graphql",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@my/schema": "*",
+    "apollo-server": "3.6.7",
+    "apollo-server-core": "3.6.7",
+    "apollo-server-express": "3.6.7",
+    "express": "4.18.1",
+    "nodemon": "2.0.16",
+    "ts-node": "10.7.0"
+  }
+}

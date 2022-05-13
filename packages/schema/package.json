@@ -1,0 +1,20 @@
+{
+  "name": "@my/schema",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "sideEffects": false,
+  "types": "types.generated.ts",
+  "exports": "types.generated.ts",
+  "scripts": {
+    "codegen": "graphql-codegen --config codegen.yml",
+    "dev": "yarn codegen --watch"
+  },
+  "dependencies": {
+    "graphql": "16.3.0",
+    "@graphql-codegen/cli": "2.6.2",
+    "@graphql-codegen/typed-document-node": "2.2.8",
+    "@graphql-codegen/typescript-enum-array": "2.1.1",
+    "@graphql-codegen/typescript-resolvers": "2.6.1"
+  }
+}
