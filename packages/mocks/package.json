@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "yarn serve:watch",
     "serve": "yarn serve:watch",
-    "serve:watch": "NODE_ENV=development PORT=5017 nodemon --watch '../schema/schema.graphql' --watch 'src' --watch 'index.ts' --watch 'package.json' --watch 'tsconfig.json' --exec 'ts-node-esm' index.ts -e ts,graphql",
-    "start": "ts-node-esm index.ts -e ts,graphql",
+    "serve:watch": "NODE_ENV=development PORT=5017 nodemon --watch '../schema/schema.graphql' --watch 'src' --watch 'server.ts' --watch 'package.json' --watch 'tsconfig.json' --exec 'ts-node-esm' server.ts -e ts,graphql",
+    "start": "ts-node-esm server.ts -e ts,graphql",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
